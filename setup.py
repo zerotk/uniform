@@ -11,15 +11,15 @@ setup(
 
     url='https://github.com/zerotk/uniform',
 
-    description = 'Uniform for python projects..',
-    long_description = '''Uniform for python projects.''',
+    description='Uniform for python projects.',
+    long_description='''Uniform for python projects.''',
 
     classifiers=[
         # How mature is this project? Common values are
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -41,19 +41,9 @@ setup(
     packages=['zerotk', 'zerotk.uniform'],
     namespace_packages=['zerotk'],
 
-    install_requires=[
-        'six',
-        'jinja2',
-        'pyyaml',
-        'zerotk.easyfs',
-        'click',
-    ],
-    setup_requires=[
-        'setuptools_scm',
-        'pytest-runner',
-    ],
-    tests_require=[
-        'coverage',
-        'pytest',
-    ],
+    keywords=['standard', 'tool', 'package', 'setup.py'],
+
+    install_requires=['click', 'jinja2', 'pyyaml', 'zerotk.easyfs'],
+    setup_requires=['setuptools_scm', 'pytest-runner'],
+    tests_require=['coverage', 'pytest'],
 )

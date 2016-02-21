@@ -1,6 +1,8 @@
 click
 jinja2
 pyyaml
-pytest
-coverage
 zerotk.easyfs
+
+# Development
+coverage
+pytest

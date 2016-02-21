@@ -1,0 +1,19 @@
+name: zerotk.uniform
+module: zerotk.uniform
+namespace: zerotk
+path: zerotk/uniform
+author: Alexandre Andrade
+author_email: kaniabi@gmail.com
+development_status: 4 - Beta
+short_description: Uniform for python projects.
+long_description: Uniform for python projects.
+keywords:
+  - standard
+  - tool
+  - package
+  - setup.py
+install_requires:
+  - click
+  - jinja2
+  - pyyaml
+  - zerotk.easyfs
