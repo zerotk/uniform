@@ -1,4 +1,5 @@
 name: alpha.zulu
+module: alpha.zulu
 namespace: alpha
 path: alpha/zulu
 author: Alpha Zulu
@@ -6,3 +7,8 @@ author_email: alpha@zulu.com
 development_status: 5 - Production/Stable
 short_description: Alpha Zulu Project.
 long_description: A test project to test zerotk.uniform.
+install_requires:
+  - six
+keywords:
+  - alpha
+  - bravo

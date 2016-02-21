@@ -41,6 +41,8 @@ setup(
     packages=['alpha', 'alpha.zulu'],
     namespace_packages=['alpha'],
 
+    keywords=['alpha', 'bravo'],
+
     install_requires=['six'],
     setup_requires=['setuptools_scm', 'pytest-runner'],
     tests_require=['coverage', 'pytest'],
