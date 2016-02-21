@@ -3,23 +3,23 @@ from setuptools import setup
 
 
 setup(
-    name='{{ module }}',
+    name='zerotk.uniform',
     use_scm_version=True,
 
-    author='{{ author }}',
-    author_email='{{ author_email }}',
+    author='Alexandre Andrade',
+    author_email='kaniabi@gmail.com',
 
-    url='https://github.com/{{ path }}',
+    url='https://github.com/zerotk/uniform',
 
-    description='{{ short_description }}',
-    long_description='''{{ long_description }}''',
+    description = 'Uniform for python projects..',
+    long_description = '''Uniform for python projects.''',
 
     classifiers=[
         # How mature is this project? Common values are
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: {{ development_status }}',
+        'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
@@ -38,12 +38,22 @@ setup(
 
     include_package_data=True,
 
-    packages=['{{ namespace }}', '{{ module }}'],
-    namespace_packages=['{{ namespace }}'],
+    packages=['zerotk', 'zerotk.uniform'],
+    namespace_packages=['zerotk'],
 
-    keywords={{ keywords }},
-
-    install_requires={{ install_requires }},
-    setup_requires=['setuptools_scm', 'pytest-runner'],
-    tests_require=['coverage', 'pytest'],
+    install_requires=[
+        'six',
+        'jinja2',
+        'pyyaml',
+        'zerotk.easyfs',
+        'click',
+    ],
+    setup_requires=[
+        'setuptools_scm',
+        'pytest-runner',
+    ],
+    tests_require=[
+        'coverage',
+        'pytest',
+    ],
 )

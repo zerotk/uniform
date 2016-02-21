@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 import os
 from zerotk.easyfs import FindFiles, GetFileContents, CreateFile
 import yaml
@@ -23,5 +24,5 @@ def create_project_file(target_filename, template_filename, config):
     template = Template(GetFileContents(template_filename))
     CreateFile(
         target_filename,
-        template.render(**config)
+        template.render(**config) + '\n'
     )
