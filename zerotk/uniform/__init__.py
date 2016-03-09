@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 import os
-from zerotk.easyfs import FindFiles, GetFileContents, CreateFile
+from zerotk.easyfs import FindFiles, GetFileContents, CreateFile, EOL_STYLE_UNIX
 import yaml
 
 
@@ -24,5 +24,6 @@ def create_project_file(target_filename, template_filename, config):
     template = Template(GetFileContents(template_filename))
     CreateFile(
         target_filename,
-        template.render(**config) + '\n'
+        template.render(**config) + '\n',
+        eol_style=EOL_STYLE_UNIX
     )
