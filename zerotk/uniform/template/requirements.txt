@@ -1,5 +1,5 @@
 {% for i_item in install_requires %}{{ i_item }}
 {% endfor %}
 # Development
-coverage
-pytest
+{% for i_item in tests_require %}{{ i_item }}
+{% endfor %}

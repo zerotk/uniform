@@ -45,5 +45,5 @@ setup(
 
     install_requires={{ install_requires }},
     setup_requires=['setuptools_scm', 'pytest-runner'],
-    tests_require=['coverage', 'pytest'],
+    tests_require={{ tests_require }},
 )
